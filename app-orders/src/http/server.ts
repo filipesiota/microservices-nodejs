@@ -36,6 +36,7 @@ app.register(fastifyCors, { origin: '*' })
  *    o tráfego para a nova versão e finaliza a versão anterior após o redirecionamento completo.
  */
 app.get('/health', () => {
+  console.log('Orders service reached!');
   return 'OK'
 })
 
